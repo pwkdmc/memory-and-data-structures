@@ -1,0 +1,10 @@
+{
+    "terminal.integrated.automationProfile.windows": {
+    "path": "cmd",
+    "args": [
+        "/k",
+        "chcp",
+        "1251"
+    ]
+}
+}
