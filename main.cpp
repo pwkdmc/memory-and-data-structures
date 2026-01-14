@@ -3,9 +3,9 @@
 #include <iomanip>
 #include <cmath>
 
-// ÀÍÀËÈÇÀÒÎĞ ÓÑÏÅÂÀÅÌÎÑÒÈ ÃĞÓÏÏÛ
+// ĞĞĞĞ›Ğ˜Ğ—ĞĞ¢ĞĞ  Ğ£Ğ¡ĞŸĞ•Ğ’ĞĞ•ĞœĞĞ¡Ğ¢Ğ˜ Ğ“Ğ Ğ£ĞŸĞŸĞ«
 
-// Ãåíåğàöèÿ ìàññèâà ñëó÷àéíûõ ÷èñåë
+// Ğ“ĞµĞ½ĞµÑ€Ğ°Ñ†Ğ¸Ñ Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ° ÑĞ»ÑƒÑ‡Ğ°Ğ¹Ğ½Ñ‹Ñ… Ñ‡Ğ¸ÑĞµĞ»
 void GenerateArrayRating(int *student_grades, int size)
 {
     for (int *current = student_grades; current < student_grades + size; ++current)
@@ -14,7 +14,7 @@ void GenerateArrayRating(int *student_grades, int size)
     }
 }
 
-// Íàõîæäåíèå ñğåäíåãî àğèôìåòè÷åñêîãî ıëåìåíòîâ ìàññèâà
+// ĞĞ°Ñ…Ğ¾Ğ¶Ğ´ĞµĞ½Ğ¸Ğµ ÑÑ€ĞµĞ´Ğ½ĞµĞ³Ğ¾ Ğ°Ñ€Ğ¸Ñ„Ğ¼ĞµÑ‚Ğ¸Ñ‡ĞµÑĞºĞ¾Ğ³Ğ¾ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¾Ğ² Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ°
 double AverageScore(int *student_grades, int size)
 {
     int sum = 0;
@@ -25,7 +25,7 @@ double AverageScore(int *student_grades, int size)
     return static_cast<double>(sum) / size;
 }
 
-// Ïîäñ÷åò ıëåìåíòîâ < 3
+// ĞŸĞ¾Ğ´ÑÑ‡ĞµÑ‚ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¾Ğ² < 3
 int NumberUnderachievers(int *student_grades, int size)
 {
     int cnt = 0;
@@ -37,7 +37,7 @@ int NumberUnderachievers(int *student_grades, int size)
     return cnt;
 }
 
-// Íàõîæäåíèå ïğîöåíòíîãî îòíîøåíèÿ êîëè÷åñòâà ıëåìåíòîâ == 5 êî âñåì ıëåìåíòàì
+// ĞĞ°Ñ…Ğ¾Ğ¶Ğ´ĞµĞ½Ğ¸Ğµ Ğ¿Ñ€Ğ¾Ñ†ĞµĞ½Ñ‚Ğ½Ğ¾Ğ³Ğ¾ Ğ¾Ñ‚Ğ½Ğ¾ÑˆĞµĞ½Ğ¸Ñ ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ° ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¾Ğ² == 5 ĞºĞ¾ Ğ²ÑĞµĞ¼ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ°Ğ¼
 double PercentageExcellentStudents(int *student_grades, int size)
 {
     int cnt = 0;
@@ -49,10 +49,10 @@ double PercentageExcellentStudents(int *student_grades, int size)
     return static_cast<double>(cnt) / size * 100;
 }
 
-// Íàõîæäåíèå ìîäû ıëåìåíòîâ ìàññèâà
+// ĞĞ°Ñ…Ğ¾Ğ¶Ğ´ĞµĞ½Ğ¸Ğµ Ğ¼Ğ¾Ğ´Ñ‹ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¾Ğ² Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ°
 int ModeSequences(int *student_grades, int size)
 {
-    // repeatability[i] - êîëè÷åñòâî ïîâòîğåíèé îöåíêè i + 2
+    // repeatability[i] - ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ğ¿Ğ¾Ğ²Ñ‚Ğ¾Ñ€ĞµĞ½Ğ¸Ğ¹ Ğ¾Ñ†ĞµĞ½ĞºĞ¸ i + 2
     int repeatability[4] = {};
     for (int *current = student_grades; current < student_grades + size; ++current)
     {
@@ -67,7 +67,7 @@ int ModeSequences(int *student_grades, int size)
     return max_repeat_grade;
 }
 
-// Èíòåğàêòèâíûé öèêë äëÿ àíàëèçàòîğà óñïåâàåìîñòè ãğóïïû
+// Ğ˜Ğ½Ñ‚ĞµÑ€Ğ°ĞºÑ‚Ğ¸Ğ²Ğ½Ñ‹Ğ¹ Ñ†Ğ¸ĞºĞ» Ğ´Ğ»Ñ Ğ°Ğ½Ğ°Ğ»Ğ¸Ğ·Ğ°Ñ‚Ğ¾Ñ€Ğ° ÑƒÑĞ¿ĞµĞ²Ğ°ĞµĞ¼Ğ¾ÑÑ‚Ğ¸ Ğ³Ñ€ÑƒĞ¿Ğ¿Ñ‹
 void GroupPerformanceAnalyzer()
 {
     const int SIZE = 15;
@@ -76,30 +76,30 @@ void GroupPerformanceAnalyzer()
     do
     {
         std::cout << std::endl
-                  << "== ÀÍÀËÈÇÀÒÎĞ ÓÑÏÅÂÀÅÌÎÑÒÈ ÃĞÓÏÏÛ ==" << std::endl;
-        std::cout << "Îöåíêè ãğóïïû ñòóäåíòîâ:" << std::endl;
+                  << "== ĞĞĞĞ›Ğ˜Ğ—ĞĞ¢ĞĞ  Ğ£Ğ¡ĞŸĞ•Ğ’ĞĞ•ĞœĞĞ¡Ğ¢Ğ˜ Ğ“Ğ Ğ£ĞŸĞŸĞ« ==" << std::endl;
+        std::cout << "ĞÑ†ĞµĞ½ĞºĞ¸ Ğ³Ñ€ÑƒĞ¿Ğ¿Ñ‹ ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğ¾Ğ²:" << std::endl;
         GenerateArrayRating(student_grades, SIZE);
         for (int i = 0; i < SIZE; ++i)
         {
             std::cout << student_grades[i] << " ";
         }
         std::cout << std::endl
-                  << "Ñğåäíèé áàëë ãğóïïû:" << std::endl;
+                  << "Ğ¡Ñ€ĞµĞ´Ğ½Ğ¸Ğ¹ Ğ±Ğ°Ğ»Ğ» Ğ³Ñ€ÑƒĞ¿Ğ¿Ñ‹:" << std::endl;
         std::cout << AverageScore(student_grades, SIZE) << std::endl;
-        std::cout << "Êîëè÷åñòâî íåóñïåâàşùèõ:" << std::endl;
+        std::cout << "ĞšĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ğ½ĞµÑƒÑĞ¿ĞµĞ²Ğ°ÑÑ‰Ğ¸Ñ…:" << std::endl;
         std::cout << NumberUnderachievers(student_grades, SIZE) << std::endl;
-        std::cout << "Ïğîöåíò îòëè÷íèêîâ:" << std::endl;
+        std::cout << "ĞŸÑ€Ğ¾Ñ†ĞµĞ½Ñ‚ Ğ¾Ñ‚Ğ»Ğ¸Ñ‡Ğ½Ğ¸ĞºĞ¾Ğ²:" << std::endl;
         std::cout << PercentageExcellentStudents(student_grades, SIZE) << "%" << std::endl;
-        std::cout << "Ñàìàÿ ÷àñòàÿ îöåíêà:" << std::endl;
+        std::cout << "Ğ¡Ğ°Ğ¼Ğ°Ñ Ñ‡Ğ°ÑÑ‚Ğ°Ñ Ğ¾Ñ†ĞµĞ½ĞºĞ°:" << std::endl;
         std::cout << ModeSequences(student_grades, SIZE) << std::endl;
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -110,15 +110,15 @@ void GroupPerformanceAnalyzer()
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
 }
 
-// ÓÌÍÛÉ ÊÀËÜÊÓËßÒÎĞ Ñ ÈÑÒÎĞÈÅÉ ÎÏÅĞÀÖÈÉ
+// Ğ£ĞœĞĞ«Ğ™ ĞšĞĞ›Ğ¬ĞšĞ£Ğ›Ğ¯Ğ¢ĞĞ  Ğ¡ Ğ˜Ğ¡Ğ¢ĞĞ Ğ˜Ğ•Ğ™ ĞĞŸĞ•Ğ ĞĞ¦Ğ˜Ğ™
 
-// Ñòğóêòóğà äëÿ õğàíåíèÿ îäíîé îïåğàöèè â èñòîğèè
+// Ğ¡Ñ‚Ñ€ÑƒĞºÑ‚ÑƒÑ€Ğ° Ğ´Ğ»Ñ Ñ…Ñ€Ğ°Ğ½ĞµĞ½Ğ¸Ñ Ğ¾Ğ´Ğ½Ğ¾Ğ¹ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ğ¸ Ğ² Ğ¸ÑÑ‚Ğ¾Ñ€Ğ¸Ğ¸
 struct Calculation
 {
     double first_number;
@@ -127,37 +127,37 @@ struct Calculation
     double result;
 };
 
-// Ñëîæåíèå ÷åğåç óêàçàòåëè
+// Ğ¡Ğ»Ğ¾Ğ¶ĞµĞ½Ğ¸Ğµ Ñ‡ĞµÑ€ĞµĞ· ÑƒĞºĞ°Ğ·Ğ°Ñ‚ĞµĞ»Ğ¸
 double Addition(double *first_number, double *second_number)
 {
     return *first_number + *second_number;
 }
 
-// Âû÷èòàíèå ÷åğåç óêàçàòåëè
+// Ğ’Ñ‹Ñ‡Ğ¸Ñ‚Ğ°Ğ½Ğ¸Ğµ Ñ‡ĞµÑ€ĞµĞ· ÑƒĞºĞ°Ğ·Ğ°Ñ‚ĞµĞ»Ğ¸
 double Subtraction(double *first_number, double *second_number)
 {
     return *first_number - *second_number;
 }
 
-// Äåëåíèå ÷åğåç óêàçàòåëè
+// Ğ”ĞµĞ»ĞµĞ½Ğ¸Ğµ Ñ‡ĞµÑ€ĞµĞ· ÑƒĞºĞ°Ğ·Ğ°Ñ‚ĞµĞ»Ğ¸
 double Division(double *first_number, double *second_number)
 {
     return *first_number / *second_number;
 }
 
-// Óìíîæåíèå ÷åğåç óêàçàòåëè
+// Ğ£Ğ¼Ğ½Ğ¾Ğ¶ĞµĞ½Ğ¸Ğµ Ñ‡ĞµÑ€ĞµĞ· ÑƒĞºĞ°Ğ·Ğ°Ñ‚ĞµĞ»Ğ¸
 double Multiplication(double *first_number, double *second_number)
 {
     return *first_number * *second_number;
 }
 
-// Îñòàòîê îò äåëåíèÿ ÷åğåç óêàçàòåëè
+// ĞÑÑ‚Ğ°Ñ‚Ğ¾Ğº Ğ¾Ñ‚ Ğ´ĞµĞ»ĞµĞ½Ğ¸Ñ Ñ‡ĞµÑ€ĞµĞ· ÑƒĞºĞ°Ğ·Ğ°Ñ‚ĞµĞ»Ğ¸
 double Remainder(double *first_number, double *second_number)
 {
     return static_cast<int>(*first_number) % static_cast<int>(*second_number);
 }
 
-// Îáğàáîòêà çàäà÷è äëÿ àğèôìåòè÷åñêèõ îïåğàöèé ñ ÷èñëàìè
+// ĞĞ±Ñ€Ğ°Ğ±Ğ¾Ñ‚ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸ Ğ´Ğ»Ñ Ğ°Ñ€Ğ¸Ñ„Ğ¼ĞµÑ‚Ğ¸Ñ‡ĞµÑĞºĞ¸Ñ… Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ğ¹ Ñ Ñ‡Ğ¸ÑĞ»Ğ°Ğ¼Ğ¸
 void ArithmeticOperationsWithNumbers(int *number_saved_operations, Calculation *history)
 {
     int issue_number = 1;
@@ -167,8 +167,8 @@ void ArithmeticOperationsWithNumbers(int *number_saved_operations, Calculation *
     do
     {
         std::cout << std::endl
-                  << "= ÀĞÈÔÌÅÒÈ×ÅÑÊÈÅ ÎÏÅĞÀÖÈÈ Ñ ×ÈÑËÀÌÈ =" << std::endl;
-        std::cout << "Ââåäèòå ïåğâîå ÷èñëî:" << std::endl;
+                  << "= ĞĞ Ğ˜Ğ¤ĞœĞ•Ğ¢Ğ˜Ğ§Ğ•Ğ¡ĞšĞ˜Ğ• ĞĞŸĞ•Ğ ĞĞ¦Ğ˜Ğ˜ Ğ¡ Ğ§Ğ˜Ğ¡Ğ›ĞĞœĞ˜ =" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¿ĞµÑ€Ğ²Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾:" << std::endl;
         std::cin >> first_number;
         std::cin.ignore(10000, '\n');
         if (std::cin.fail())
@@ -177,7 +177,7 @@ void ArithmeticOperationsWithNumbers(int *number_saved_operations, Calculation *
             std::cin.ignore(10000, '\n');
             first_number = -1;
         }
-        std::cout << "Ââåäèòå âòîğîå ÷èñëî:" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ²Ñ‚Ğ¾Ñ€Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾:" << std::endl;
         std::cin >> second_number;
         std::cin.ignore(10000, '\n');
         if (std::cin.fail())
@@ -186,25 +186,25 @@ void ArithmeticOperationsWithNumbers(int *number_saved_operations, Calculation *
             std::cin.ignore(10000, '\n');
             second_number = -1;
         }
-        std::cout << "Ââåäèòå îïåğàöèş (+, -, *, /, %):" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ñ (+, -, *, /, %):" << std::endl;
         std::cin >> operation;
         std::cin.ignore(10000, '\n');
         if (operation != '+' && operation != '-' && operation != '*' && operation != '/' && operation != '%')
         {
-            std::cout << "ÎØÈÁÊÀ: Ââåäåí íåêîğğåêòíûé ñèìâîë" << std::endl;
+            std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½ Ğ½ĞµĞºĞ¾Ñ€Ñ€ĞµĞºÑ‚Ğ½Ñ‹Ğ¹ ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»" << std::endl;
             continue;
         }
         if ((operation == '/' || operation == '%') && second_number == 0)
         {
-            std::cout << "ÎØÈÁÊÀ: Äåëåíèå íà 0" << std::endl;
+            std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ”ĞµĞ»ĞµĞ½Ğ¸Ğµ Ğ½Ğ° 0" << std::endl;
             continue;
         }
         if (operation == '%' && ((static_cast<int>(first_number) != first_number) || (static_cast<int>(second_number) != second_number)))
         {
-            std::cout << "ÎØÈÁÊÀ: Îñòàòîê îò äåëåíèÿ íåöåëî÷èñëåííûõ òèïîâ" << std::endl;
+            std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: ĞÑÑ‚Ğ°Ñ‚Ğ¾Ğº Ğ¾Ñ‚ Ğ´ĞµĞ»ĞµĞ½Ğ¸Ñ Ğ½ĞµÑ†ĞµĞ»Ğ¾Ñ‡Ğ¸ÑĞ»ĞµĞ½Ğ½Ñ‹Ñ… Ñ‚Ğ¸Ğ¿Ğ¾Ğ²" << std::endl;
             continue;
         }
-        std::cout << "Ğåçóëüòàò:" << std::endl;
+        std::cout << "Ğ ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚:" << std::endl;
         double result;
         if (operation == '+')
         {
@@ -229,8 +229,8 @@ void ArithmeticOperationsWithNumbers(int *number_saved_operations, Calculation *
         std::cout << result << std::endl;
         if (*number_saved_operations < 5)
             ++*number_saved_operations;
-        // Ñäâèã îïåğàöèé â èñòîğèè íà 1
-        // Íóëåâîé ıëåìåíò îñòàåòñÿ ñâîáîäíûì äëÿ íîâîé îïåğàöèè, ïîñëåäíèé íå ñîõğàíÿåòñÿ
+        // Ğ¡Ğ´Ğ²Ğ¸Ğ³ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ğ¹ Ğ² Ğ¸ÑÑ‚Ğ¾Ñ€Ğ¸Ğ¸ Ğ½Ğ° 1
+        // ĞÑƒĞ»ĞµĞ²Ğ¾Ğ¹ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚ Ğ¾ÑÑ‚Ğ°ĞµÑ‚ÑÑ ÑĞ²Ğ¾Ğ±Ğ¾Ğ´Ğ½Ñ‹Ğ¼ Ğ´Ğ»Ñ Ğ½Ğ¾Ğ²Ğ¾Ğ¹ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ğ¸, Ğ¿Ğ¾ÑĞ»ĞµĞ´Ğ½Ğ¸Ğ¹ Ğ½Ğµ ÑĞ¾Ñ…Ñ€Ğ°Ğ½ÑĞµÑ‚ÑÑ
         for (Calculation *current = history + 4; current > history; --current)
         {
             (*current).first_number = (*(current - 1)).first_number;
@@ -238,7 +238,7 @@ void ArithmeticOperationsWithNumbers(int *number_saved_operations, Calculation *
             (*current).operation = (*(current - 1)).operation;
             (*current).result = (*(current - 1)).result;
         }
-        // Çàïèñü òåêóùåé îïåğàöèè â èñòîğèş
+        // Ğ—Ğ°Ğ¿Ğ¸ÑÑŒ Ñ‚ĞµĞºÑƒÑ‰ĞµĞ¹ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ğ¸ Ğ² Ğ¸ÑÑ‚Ğ¾Ñ€Ğ¸Ñ
         (*history).first_number = first_number;
         (*history).second_number = second_number;
         (*history).operation = operation;
@@ -246,11 +246,11 @@ void ArithmeticOperationsWithNumbers(int *number_saved_operations, Calculation *
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -261,20 +261,20 @@ void ArithmeticOperationsWithNumbers(int *number_saved_operations, Calculation *
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåêîğğåêòíîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞºĞ¾Ñ€Ñ€ĞµĞºÑ‚Ğ½Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
 }
 
-// Âûâîä èñòîğèè îïåğàöèé
+// Ğ’Ñ‹Ğ²Ğ¾Ğ´ Ğ¸ÑÑ‚Ğ¾Ñ€Ğ¸Ğ¸ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ğ¹
 void HistoryOperations(int *number_saved_operations, Calculation *history)
 {
     int issue_number;
     do
     {
         std::cout << std::endl
-                  << "= ÈÑÒÎĞÈß ÎÏÅĞÀÖÈÉ =" << std::endl;
+                  << "= Ğ˜Ğ¡Ğ¢ĞĞ Ğ˜Ğ¯ ĞĞŸĞ•Ğ ĞĞ¦Ğ˜Ğ™ =" << std::endl;
         for (Calculation *current = history; current < history + *number_saved_operations; ++current)
         {
             std::cout << current - history + 1 << ". " << (*current).first_number << " " << (*current).operation << " " << (*current).second_number << " = " << (*current).result << std::endl;
@@ -282,11 +282,11 @@ void HistoryOperations(int *number_saved_operations, Calculation *history)
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -297,13 +297,13 @@ void HistoryOperations(int *number_saved_operations, Calculation *history)
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
 }
 
-// Îáìåí çíà÷åíèé ïåğåìåííûõ ÷åğåç óêàçàòåëè
+// ĞĞ±Ğ¼ĞµĞ½ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğ¹ Ğ¿ĞµÑ€ĞµĞ¼ĞµĞ½Ğ½Ñ‹Ñ… Ñ‡ĞµÑ€ĞµĞ· ÑƒĞºĞ°Ğ·Ğ°Ñ‚ĞµĞ»Ğ¸
 void ExchangeValues(double *var_a, double *var_b)
 {
     double temp = *var_a;
@@ -311,17 +311,17 @@ void ExchangeValues(double *var_a, double *var_b)
     *var_b = temp;
 }
 
-// Îáğàáîòêà çàäà÷è äëÿ îáìåíà çíà÷åíèé ïåğåìåííûõ
+// ĞĞ±Ñ€Ğ°Ğ±Ğ¾Ñ‚ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸ Ğ´Ğ»Ñ Ğ¾Ğ±Ğ¼ĞµĞ½Ğ° Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğ¹ Ğ¿ĞµÑ€ĞµĞ¼ĞµĞ½Ğ½Ñ‹Ñ…
 void ExchangeVariableValues()
 {
     int issue_number;
     do
     {
         std::cout << std::endl
-                  << "= ÎÁÌÅÍ ÇÍÀ×ÅÍÈÉ ÏÅĞÅÌÅÍÍÛÕ =" << std::endl;
+                  << "= ĞĞ‘ĞœĞ•Ğ Ğ—ĞĞĞ§Ğ•ĞĞ˜Ğ™ ĞŸĞ•Ğ Ğ•ĞœĞ•ĞĞĞ«Ğ¥ =" << std::endl;
         double var_a;
         double var_b;
-        std::cout << "Ââåäèòå çíà÷åíèå ïåğâîé ïåğåìåííîé (var_a):" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ Ğ¿ĞµÑ€Ğ²Ğ¾Ğ¹ Ğ¿ĞµÑ€ĞµĞ¼ĞµĞ½Ğ½Ğ¾Ğ¹ (var_a):" << std::endl;
         std::cin >> var_a;
         std::cin.ignore(10000, '\n');
         if (std::cin.fail())
@@ -330,7 +330,7 @@ void ExchangeVariableValues()
             std::cin.ignore(10000, '\n');
             var_a = -1;
         }
-        std::cout << "Ââåäèòå çíà÷åíèå âòîğîé ïåğåìåííîé (var_b):" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ Ğ²Ñ‚Ğ¾Ñ€Ğ¾Ğ¹ Ğ¿ĞµÑ€ĞµĞ¼ĞµĞ½Ğ½Ğ¾Ğ¹ (var_b):" << std::endl;
         std::cin >> var_b;
         std::cin.ignore(10000, '\n');
         if (std::cin.fail())
@@ -341,16 +341,16 @@ void ExchangeVariableValues()
         }
         std::cout << "var_a = " << var_a << ", var_b = " << var_b << std::endl;
         ExchangeValues(&var_a, &var_b);
-        std::cout << "Ğåçóëüòàò:" << std::endl;
+        std::cout << "Ğ ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚:" << std::endl;
         std::cout << "var_a = " << var_a << ", var_b = " << var_b << std::endl;
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -361,13 +361,13 @@ void ExchangeVariableValues()
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
 }
 
-// Ïîèñê ìèíèìóìà â ïîñëåäîâàòåëüíîñòè ÷èñåë ÷åğåç óêàçàòåëè
+// ĞŸĞ¾Ğ¸ÑĞº Ğ¼Ğ¸Ğ½Ğ¸Ğ¼ÑƒĞ¼Ğ° Ğ² Ğ¿Ğ¾ÑĞ»ĞµĞ´Ğ¾Ğ²Ğ°Ñ‚ĞµĞ»ÑŒĞ½Ğ¾ÑÑ‚Ğ¸ Ñ‡Ğ¸ÑĞµĞ» Ñ‡ĞµÑ€ĞµĞ· ÑƒĞºĞ°Ğ·Ğ°Ñ‚ĞµĞ»Ğ¸
 double FindMin(double *numbers, int size)
 {
     double min = *numbers;
@@ -379,7 +379,7 @@ double FindMin(double *numbers, int size)
     return min;
 }
 
-// Ïîèñê ìàêñèìóìà â ïîñëåäîâàòåëüíîñòè ÷èñåë ÷åğåç óêàçàòåëè
+// ĞŸĞ¾Ğ¸ÑĞº Ğ¼Ğ°ĞºÑĞ¸Ğ¼ÑƒĞ¼Ğ° Ğ² Ğ¿Ğ¾ÑĞ»ĞµĞ´Ğ¾Ğ²Ğ°Ñ‚ĞµĞ»ÑŒĞ½Ğ¾ÑÑ‚Ğ¸ Ñ‡Ğ¸ÑĞµĞ» Ñ‡ĞµÑ€ĞµĞ· ÑƒĞºĞ°Ğ·Ğ°Ñ‚ĞµĞ»Ğ¸
 double FindMax(double *numbers, int size)
 {
     double max = *numbers;
@@ -391,7 +391,7 @@ double FindMax(double *numbers, int size)
     return max;
 }
 
-// Îáğàáîòêà çàäà÷è äëÿ ïîèñêà ìèíèìàëüíîãî è ìàêñèìàëüíîãî èç ÷èñåë
+// ĞĞ±Ñ€Ğ°Ğ±Ğ¾Ñ‚ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸ Ğ´Ğ»Ñ Ğ¿Ğ¾Ğ¸ÑĞºĞ° Ğ¼Ğ¸Ğ½Ğ¸Ğ¼Ğ°Ğ»ÑŒĞ½Ğ¾Ğ³Ğ¾ Ğ¸ Ğ¼Ğ°ĞºÑĞ¸Ğ¼Ğ°Ğ»ÑŒĞ½Ğ¾Ğ³Ğ¾ Ğ¸Ğ· Ñ‡Ğ¸ÑĞµĞ»
 void FindMaxMin()
 {
     int size;
@@ -399,8 +399,8 @@ void FindMaxMin()
     do
     {
         std::cout << std::endl
-                  << "= ÏÎÈÑÊ ÌÈÍÈÌÀËÜÍÎÃÎ È ÌÀÊÑÈÌÀËÜÍÎÃÎ ÈÇ ×ÈÑÅË =" << std::endl;
-        std::cout << "Ââåäèòå êîëè÷åñòâî ÷èñåë:" << std::endl;
+                  << "= ĞŸĞĞ˜Ğ¡Ğš ĞœĞ˜ĞĞ˜ĞœĞĞ›Ğ¬ĞĞĞ“Ğ Ğ˜ ĞœĞĞšĞ¡Ğ˜ĞœĞĞ›Ğ¬ĞĞĞ“Ğ Ğ˜Ğ— Ğ§Ğ˜Ğ¡Ğ•Ğ› =" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ñ‡Ğ¸ÑĞµĞ»:" << std::endl;
         std::cin >> size;
         std::cin.ignore(10000, '\n');
         if (std::cin.fail())
@@ -411,11 +411,11 @@ void FindMaxMin()
         }
         if (size <= 0)
         {
-            std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåêîğğåêòíîå ÷èñëî" << std::endl;
+            std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞºĞ¾Ñ€Ñ€ĞµĞºÑ‚Ğ½Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             continue;
         }
         double *numbers = new double[size];
-        std::cout << "Ââåäèòå " << size << " ÷èñåë:" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ " << size << " Ñ‡Ğ¸ÑĞµĞ»:" << std::endl;
         for (double *current = numbers; current < numbers + size; ++current)
         {
             std::cin >> *current;
@@ -426,19 +426,19 @@ void FindMaxMin()
             }
         }
         std::cin.ignore(10000, '\n');
-        std::cout << "Ìèíèìàëüíîå ÷èñëî:" << std::endl;
+        std::cout << "ĞœĞ¸Ğ½Ğ¸Ğ¼Ğ°Ğ»ÑŒĞ½Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾:" << std::endl;
         std::cout << FindMin(numbers, size) << std::endl;
-        std::cout << "Ìàêñèìàëüíîå ÷èñëî:" << std::endl;
+        std::cout << "ĞœĞ°ĞºÑĞ¸Ğ¼Ğ°Ğ»ÑŒĞ½Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾:" << std::endl;
         std::cout << FindMax(numbers, size) << std::endl;
         delete[] numbers;
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -449,13 +449,13 @@ void FindMaxMin()
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
 }
 
-// Èíòåğàêòèâíûé öèêë äëÿ óìíîãî êàëüêóëÿòîğà ñ èñòîğèåé îïåğàöèé
+// Ğ˜Ğ½Ñ‚ĞµÑ€Ğ°ĞºÑ‚Ğ¸Ğ²Ğ½Ñ‹Ğ¹ Ñ†Ğ¸ĞºĞ» Ğ´Ğ»Ñ ÑƒĞ¼Ğ½Ğ¾Ğ³Ğ¾ ĞºĞ°Ğ»ÑŒĞºÑƒĞ»ÑÑ‚Ğ¾Ñ€Ğ° Ñ Ğ¸ÑÑ‚Ğ¾Ñ€Ğ¸ĞµĞ¹ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ğ¹
 void SmartCalculatorWithTransactionHistory()
 {
     int issue_number;
@@ -464,14 +464,14 @@ void SmartCalculatorWithTransactionHistory()
     do
     {
         std::cout << std::endl
-                  << "== ÓÌÍÛÉ ÊÀËÜÊÓËßÒÎĞ Ñ ÈÑÒÎĞÈÅÉ ÎÏÅĞÀÖÈÉ ==" << std::endl;
-        std::cout << "1. Àğèôìåòè÷åñêèå îïåğàöèè ñ ÷èñëàìè" << std::endl;
-        std::cout << "2. Èñòîğèÿ îïåğàöèé" << std::endl;
-        std::cout << "3. Îáìåí çíà÷åíèé ïåğåìåííûõ" << std::endl;
-        std::cout << "4. Ïîèñê ìèíèìàëüíîãî è ìàêñèìàëüíîãî èç ÷èñåë" << std::endl;
-        std::cout << "0. Âûõîä" << std::endl
+                  << "== Ğ£ĞœĞĞ«Ğ™ ĞšĞĞ›Ğ¬ĞšĞ£Ğ›Ğ¯Ğ¢ĞĞ  Ğ¡ Ğ˜Ğ¡Ğ¢ĞĞ Ğ˜Ğ•Ğ™ ĞĞŸĞ•Ğ ĞĞ¦Ğ˜Ğ™ ==" << std::endl;
+        std::cout << "1. ĞÑ€Ğ¸Ñ„Ğ¼ĞµÑ‚Ğ¸Ñ‡ĞµÑĞºĞ¸Ğµ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ğ¸ Ñ Ñ‡Ğ¸ÑĞ»Ğ°Ğ¼Ğ¸" << std::endl;
+        std::cout << "2. Ğ˜ÑÑ‚Ğ¾Ñ€Ğ¸Ñ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ğ¹" << std::endl;
+        std::cout << "3. ĞĞ±Ğ¼ĞµĞ½ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğ¹ Ğ¿ĞµÑ€ĞµĞ¼ĞµĞ½Ğ½Ñ‹Ñ…" << std::endl;
+        std::cout << "4. ĞŸĞ¾Ğ¸ÑĞº Ğ¼Ğ¸Ğ½Ğ¸Ğ¼Ğ°Ğ»ÑŒĞ½Ğ¾Ğ³Ğ¾ Ğ¸ Ğ¼Ğ°ĞºÑĞ¸Ğ¼Ğ°Ğ»ÑŒĞ½Ğ¾Ğ³Ğ¾ Ğ¸Ğ· Ñ‡Ğ¸ÑĞµĞ»" << std::endl;
+        std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                   << std::endl;
-        std::cout << "Âûáåğèòå äåéñòâèå: " << std::endl;
+        std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ: " << std::endl;
         std::cin >> issue_number;
         std::cin.ignore(10000, '\n');
         if (std::cin.fail())
@@ -498,24 +498,24 @@ void SmartCalculatorWithTransactionHistory()
         }
         else if (issue_number != 0)
         {
-            std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+            std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
         }
     } while (issue_number != 0);
 }
 
-// ÄÅÒÅÊÒÎĞ ÏÀËÈÍÄĞÎÌÎÂ È ÀÍÀÃĞÀÌÌ
+// Ğ”Ğ•Ğ¢Ğ•ĞšĞ¢ĞĞ  ĞŸĞĞ›Ğ˜ĞĞ”Ğ ĞĞœĞĞ’ Ğ˜ ĞĞĞĞ“Ğ ĞĞœĞœ
 
-// Ïğîâåğêà ñòğîêè íà ïàëèíäğîì
+// ĞŸÑ€Ğ¾Ğ²ĞµÑ€ĞºĞ° ÑÑ‚Ñ€Ğ¾ĞºĞ¸ Ğ½Ğ° Ğ¿Ğ°Ğ»Ğ¸Ğ½Ğ´Ñ€Ğ¾Ğ¼
 bool CheckPalindrome(char *string)
 {
     bool is_palindrome = true;
-    // Ëåâûé óêàçàòåëü íà íà÷àëî ìàññèâà, ïğàâûé - íà êîíåö
+    // Ğ›ĞµĞ²Ñ‹Ğ¹ ÑƒĞºĞ°Ğ·Ğ°Ñ‚ĞµĞ»ÑŒ Ğ½Ğ° Ğ½Ğ°Ñ‡Ğ°Ğ»Ğ¾ Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ°, Ğ¿Ñ€Ğ°Ğ²Ñ‹Ğ¹ - Ğ½Ğ° ĞºĞ¾Ğ½ĞµÑ†
     char *left = string;
     char *right = string + std::strlen(string) - 1;
-    // Ñğàâíåíèå ñèìâîëîâ, ïîêà óêàçàòåëè íå âñòğåòÿòñÿ
+    // Ğ¡Ñ€Ğ°Ğ²Ğ½ĞµĞ½Ğ¸Ğµ ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ², Ğ¿Ğ¾ĞºĞ° ÑƒĞºĞ°Ğ·Ğ°Ñ‚ĞµĞ»Ğ¸ Ğ½Ğµ Ğ²ÑÑ‚Ñ€ĞµÑ‚ÑÑ‚ÑÑ
     while (right > left)
     {
-        // Ïğîïóñê ïğîáåëîâ
+        // ĞŸÑ€Ğ¾Ğ¿ÑƒÑĞº Ğ¿Ñ€Ğ¾Ğ±ĞµĞ»Ğ¾Ğ²
         if (*right == ' ')
         {
             --right;
@@ -532,14 +532,14 @@ bool CheckPalindrome(char *string)
             ++left;
             continue;
         }
-        // Åñëè îäíà èç áóêâ â âåğõíåì ğåãèñòğå, ïğèâåäåíèå ê íèæíåìó è ñğàâíåíèå
-        if (*right >= 'À' && *right <= 'ß' && (*right - ('À' - 'à') == *left))
+        // Ğ•ÑĞ»Ğ¸ Ğ¾Ğ´Ğ½Ğ° Ğ¸Ğ· Ğ±ÑƒĞºĞ² Ğ² Ğ²ĞµÑ€Ñ…Ğ½ĞµĞ¼ Ñ€ĞµĞ³Ğ¸ÑÑ‚Ñ€Ğµ, Ğ¿Ñ€Ğ¸Ğ²ĞµĞ´ĞµĞ½Ğ¸Ğµ Ğº Ğ½Ğ¸Ğ¶Ğ½ĞµĞ¼Ñƒ Ğ¸ ÑÑ€Ğ°Ğ²Ğ½ĞµĞ½Ğ¸Ğµ
+        if (*right >= 'Ğ' && *right <= 'Ğ¯' && (*right - ('Ğ' - 'Ğ°') == *left))
         {
             --right;
             ++left;
             continue;
         }
-        if (*left >= 'À' && *left <= 'ß' && (*left - ('À' - 'à') == *right))
+        if (*left >= 'Ğ' && *left <= 'Ğ¯' && (*left - ('Ğ' - 'Ğ°') == *right))
         {
             --right;
             ++left;
@@ -563,7 +563,7 @@ bool CheckPalindrome(char *string)
     return is_palindrome;
 }
 
-// Îáğàáîòêà çàäà÷è äëÿ ïğîâåğêè ñòğîêè íà ïàëèíäğîì
+// ĞĞ±Ñ€Ğ°Ğ±Ğ¾Ñ‚ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸ Ğ´Ğ»Ñ Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ĞºĞ¸ ÑÑ‚Ñ€Ğ¾ĞºĞ¸ Ğ½Ğ° Ğ¿Ğ°Ğ»Ğ¸Ğ½Ğ´Ñ€Ğ¾Ğ¼
 void CheckingPalindrome()
 {
     int issue_number;
@@ -571,8 +571,8 @@ void CheckingPalindrome()
     {
         char string[21];
         std::cout << std::endl
-                  << "= ÏĞÎÂÅĞÊÀ ÑÒĞÎÊÈ ÍÀ ÏÀËÈÍÄĞÎÌ =" << std::endl;
-        std::cout << "Ââåäèòå ñòğîêó (íå áîëåå 20 ñèìâîëîâ): " << std::endl;
+                  << "= ĞŸĞ ĞĞ’Ğ•Ğ ĞšĞ Ğ¡Ğ¢Ğ ĞĞšĞ˜ ĞĞ ĞŸĞĞ›Ğ˜ĞĞ”Ğ ĞĞœ =" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑÑ‚Ñ€Ğ¾ĞºÑƒ (Ğ½Ğµ Ğ±Ğ¾Ğ»ĞµĞµ 20 ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²): " << std::endl;
         std::cin.getline(string, 20);
         if (std::cin.fail())
         {
@@ -582,20 +582,20 @@ void CheckingPalindrome()
         bool is_palindrome = CheckPalindrome(string);
         if (is_palindrome)
         {
-            std::cout << "Ñòğîêà \"" << string << "\" ÿâëÿåòñÿ ïàëèíäğîìîì" << std::endl;
+            std::cout << "Ğ¡Ñ‚Ñ€Ğ¾ĞºĞ° \"" << string << "\" ÑĞ²Ğ»ÑĞµÑ‚ÑÑ Ğ¿Ğ°Ğ»Ğ¸Ğ½Ğ´Ñ€Ğ¾Ğ¼Ğ¾Ğ¼" << std::endl;
         }
         else
         {
-            std::cout << "Ñòğîêà \"" << string << "\" íå ÿâëÿåòñÿ ïàëèíäğîìîì" << std::endl;
+            std::cout << "Ğ¡Ñ‚Ñ€Ğ¾ĞºĞ° \"" << string << "\" Ğ½Ğµ ÑĞ²Ğ»ÑĞµÑ‚ÑÑ Ğ¿Ğ°Ğ»Ğ¸Ğ½Ğ´Ñ€Ğ¾Ğ¼Ğ¾Ğ¼" << std::endl;
         }
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -606,13 +606,13 @@ void CheckingPalindrome()
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
 }
 
-// Ïğîâåğêà ñòğîê íà àíàãğàììû
+// ĞŸÑ€Ğ¾Ğ²ĞµÑ€ĞºĞ° ÑÑ‚Ñ€Ğ¾Ğº Ğ½Ğ° Ğ°Ğ½Ğ°Ğ³Ñ€Ğ°Ğ¼Ğ¼Ñ‹
 bool CheckAnagrams(char *first_string, char *second_string)
 {
     if (std::strlen(first_string) != std::strlen(second_string))
@@ -620,7 +620,7 @@ bool CheckAnagrams(char *first_string, char *second_string)
     bool is_anagram = true;
     for (char *current = first_string; current < first_string + std::strlen(first_string); ++current)
     {
-        // Ïîäñ÷åò è ñğàâíåíèå êîëè÷åñòâà ïîâòîğåíèé òåêóùåãî ñèìâîëà â ïåğâîé ñòğîêå è âî âòîğîé
+        // ĞŸĞ¾Ğ´ÑÑ‡ĞµÑ‚ Ğ¸ ÑÑ€Ğ°Ğ²Ğ½ĞµĞ½Ğ¸Ğµ ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ° Ğ¿Ğ¾Ğ²Ñ‚Ğ¾Ñ€ĞµĞ½Ğ¸Ğ¹ Ñ‚ĞµĞºÑƒÑ‰ĞµĞ³Ğ¾ ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ° Ğ² Ğ¿ĞµÑ€Ğ²Ğ¾Ğ¹ ÑÑ‚Ñ€Ğ¾ĞºĞµ Ğ¸ Ğ²Ğ¾ Ğ²Ñ‚Ğ¾Ñ€Ğ¾Ğ¹
         int cnt_first = 0;
         for (char *current_first = first_string; current_first < first_string + std::strlen(first_string); ++current_first)
         {
@@ -646,8 +646,8 @@ bool CheckAnagrams(char *first_string, char *second_string)
     return is_anagram;
 }
 
-// Îáğàáîòêà çàäà÷è äëÿ ïğîâåğêè äâóõ ñòğîê íà àíàãğàììû
-void ÑheckingAnagrams()
+// ĞĞ±Ñ€Ğ°Ğ±Ğ¾Ñ‚ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸ Ğ´Ğ»Ñ Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ĞºĞ¸ Ğ´Ğ²ÑƒÑ… ÑÑ‚Ñ€Ğ¾Ğº Ğ½Ğ° Ğ°Ğ½Ğ°Ğ³Ñ€Ğ°Ğ¼Ğ¼Ñ‹
+void Ğ¡heckingAnagrams()
 {
     int issue_number;
     do
@@ -655,15 +655,15 @@ void ÑheckingAnagrams()
         char first_string[21];
         char second_string[21];
         std::cout << std::endl
-                  << "= ÏĞÎÂÅĞÊÀ ÄÂÓÕ ÑÒĞÎÊ ÍÀ ÀÍÀÃĞÀÌÌÛ =" << std::endl;
-        std::cout << "Ââåäèòå ïåğâóş ñòğîêó (íå áîëåå 20 ñèìâîëîâ): " << std::endl;
+                  << "= ĞŸĞ ĞĞ’Ğ•Ğ ĞšĞ Ğ”Ğ’Ğ£Ğ¥ Ğ¡Ğ¢Ğ ĞĞš ĞĞ ĞĞĞĞ“Ğ ĞĞœĞœĞ« =" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¿ĞµÑ€Ğ²ÑƒÑ ÑÑ‚Ñ€Ğ¾ĞºÑƒ (Ğ½Ğµ Ğ±Ğ¾Ğ»ĞµĞµ 20 ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²): " << std::endl;
         std::cin.getline(first_string, 20);
         if (std::cin.fail())
         {
             std::cin.clear();
             std::cin.ignore(10000, '\n');
         }
-        std::cout << "Ââåäèòå âòîğóş ñòğîêó (íå áîëåå 20 ñèìâîëîâ): " << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ²Ñ‚Ğ¾Ñ€ÑƒÑ ÑÑ‚Ñ€Ğ¾ĞºÑƒ (Ğ½Ğµ Ğ±Ğ¾Ğ»ĞµĞµ 20 ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²): " << std::endl;
         std::cin.getline(second_string, 20);
         if (std::cin.fail())
         {
@@ -673,20 +673,20 @@ void ÑheckingAnagrams()
         bool is_anagram = CheckAnagrams(first_string, second_string);
         if (is_anagram)
         {
-            std::cout << "Ñòğîêè \"" << first_string << "\" è \"" << second_string << "\" ÿâëÿşòñÿ àíàãğàììàìè" << std::endl;
+            std::cout << "Ğ¡Ñ‚Ñ€Ğ¾ĞºĞ¸ \"" << first_string << "\" Ğ¸ \"" << second_string << "\" ÑĞ²Ğ»ÑÑÑ‚ÑÑ Ğ°Ğ½Ğ°Ğ³Ñ€Ğ°Ğ¼Ğ¼Ğ°Ğ¼Ğ¸" << std::endl;
         }
         else
         {
-            std::cout << "Ñòğîêè \"" << first_string << "\" è \"" << second_string << "\" íå ÿâëÿşòñÿ àíàãğàììàìè" << std::endl;
+            std::cout << "Ğ¡Ñ‚Ñ€Ğ¾ĞºĞ¸ \"" << first_string << "\" Ğ¸ \"" << second_string << "\" Ğ½Ğµ ÑĞ²Ğ»ÑÑÑ‚ÑÑ Ğ°Ğ½Ğ°Ğ³Ñ€Ğ°Ğ¼Ğ¼Ğ°Ğ¼Ğ¸" << std::endl;
         }
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -697,13 +697,13 @@ void ÑheckingAnagrams()
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
 }
 
-// Îáìåí ñèìâîëîâ
+// ĞĞ±Ğ¼ĞµĞ½ ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²
 void Swap(char *first_sym, char *second_sym)
 {
     char temp = *first_sym;
@@ -711,7 +711,7 @@ void Swap(char *first_sym, char *second_sym)
     *second_sym = temp;
 }
 
-// Ğåâåğñ ñòğîêè
+// Ğ ĞµĞ²ĞµÑ€Ñ ÑÑ‚Ñ€Ğ¾ĞºĞ¸
 void Reverse(char *string)
 {
     char *left = string;
@@ -724,7 +724,7 @@ void Reverse(char *string)
     }
 }
 
-// Îáğàáîòêà çàäà÷è äëÿ ğåâåğñà ñòğîêè
+// ĞĞ±Ñ€Ğ°Ğ±Ğ¾Ñ‚ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸ Ğ´Ğ»Ñ Ñ€ĞµĞ²ĞµÑ€ÑĞ° ÑÑ‚Ñ€Ğ¾ĞºĞ¸
 void LineReversal()
 {
     int issue_number;
@@ -732,25 +732,25 @@ void LineReversal()
     {
         char string[21];
         std::cout << std::endl
-                  << "= ĞÅÂÅĞÑ ÑÒĞÎÊÈ =" << std::endl;
-        std::cout << "Ââåäèòå ñòğîêó (íå áîëåå 20 ñèìâîëîâ): " << std::endl;
+                  << "= Ğ Ğ•Ğ’Ğ•Ğ Ğ¡ Ğ¡Ğ¢Ğ ĞĞšĞ˜ =" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑÑ‚Ñ€Ğ¾ĞºÑƒ (Ğ½Ğµ Ğ±Ğ¾Ğ»ĞµĞµ 20 ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²): " << std::endl;
         std::cin.getline(string, 20);
         if (std::cin.fail())
         {
             std::cin.clear();
             std::cin.ignore(10000, '\n');
         }
-        std::cout << "Ğåçóëüòàò äëÿ ñòğîêè \"" << string << "\":" << std::endl;
+        std::cout << "Ğ ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚ Ğ´Ğ»Ñ ÑÑ‚Ñ€Ğ¾ĞºĞ¸ \"" << string << "\":" << std::endl;
         Reverse(string);
         std::cout << string << std::endl;
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -761,13 +761,13 @@ void LineReversal()
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
 }
 
-// Ïîäñ÷åò êîëè÷åñòâà ñëîâ â ñòğîêå
+// ĞŸĞ¾Ğ´ÑÑ‡ĞµÑ‚ ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ° ÑĞ»Ğ¾Ğ² Ğ² ÑÑ‚Ñ€Ğ¾ĞºĞµ
 int NumberWords(char *string)
 {
     int cnt = 0;
@@ -787,7 +787,7 @@ int NumberWords(char *string)
     return cnt;
 }
 
-// Îáğàáîòêà çàäà÷è äëÿ ïîäñ÷åòà êîëè÷åñòâà ñëîâ â ñòğîêå
+// ĞĞ±Ñ€Ğ°Ğ±Ğ¾Ñ‚ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸ Ğ´Ğ»Ñ Ğ¿Ğ¾Ğ´ÑÑ‡ĞµÑ‚Ğ° ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ° ÑĞ»Ğ¾Ğ² Ğ² ÑÑ‚Ñ€Ğ¾ĞºĞµ
 void CountingNumberWords()
 {
     int issue_number;
@@ -795,24 +795,24 @@ void CountingNumberWords()
     {
         char string[21];
         std::cout << std::endl
-                  << "= ÏÎÄÑ×ÅÒ ÊÎËÈ×ÅÑÒÂÀ ÑËÎÂ Â ÑÒĞÎÊÅ =" << std::endl;
-        std::cout << "Ââåäèòå ñòğîêó (íå áîëåå 20 ñèìâîëîâ): " << std::endl;
+                  << "= ĞŸĞĞ”Ğ¡Ğ§Ğ•Ğ¢ ĞšĞĞ›Ğ˜Ğ§Ğ•Ğ¡Ğ¢Ğ’Ğ Ğ¡Ğ›ĞĞ’ Ğ’ Ğ¡Ğ¢Ğ ĞĞšĞ• =" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑÑ‚Ñ€Ğ¾ĞºÑƒ (Ğ½Ğµ Ğ±Ğ¾Ğ»ĞµĞµ 20 ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²): " << std::endl;
         std::cin.getline(string, 20);
         if (std::cin.fail())
         {
             std::cin.clear();
             std::cin.ignore(10000, '\n');
         }
-        std::cout << "Êîëè÷åñòâî ñëîâ â ñòğîêå \"" << string << "\":" << std::endl;
+        std::cout << "ĞšĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ ÑĞ»Ğ¾Ğ² Ğ² ÑÑ‚Ñ€Ğ¾ĞºĞµ \"" << string << "\":" << std::endl;
         std::cout << NumberWords(string) << std::endl;
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -823,13 +823,13 @@ void CountingNumberWords()
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
 }
 
-// Ïîèñê ñàìîãî äëèííîãî ñëîâà
+// ĞŸĞ¾Ğ¸ÑĞº ÑĞ°Ğ¼Ğ¾Ğ³Ğ¾ Ğ´Ğ»Ğ¸Ğ½Ğ½Ğ¾Ğ³Ğ¾ ÑĞ»Ğ¾Ğ²Ğ°
 void LongestWord(char *string, char *result)
 {
     bool word = false;
@@ -870,7 +870,7 @@ void LongestWord(char *string, char *result)
     }
 }
 
-// Îáğàáîòêà çàäà÷è äëÿ ïîèñêà ñàìîãî äëèííîãî ñëîâà
+// ĞĞ±Ñ€Ğ°Ğ±Ğ¾Ñ‚ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸ Ğ´Ğ»Ñ Ğ¿Ğ¾Ğ¸ÑĞºĞ° ÑĞ°Ğ¼Ğ¾Ğ³Ğ¾ Ğ´Ğ»Ğ¸Ğ½Ğ½Ğ¾Ğ³Ğ¾ ÑĞ»Ğ¾Ğ²Ğ°
 void SearchLongestWord()
 {
     int issue_number;
@@ -878,8 +878,8 @@ void SearchLongestWord()
     {
         char string[21];
         std::cout << std::endl
-                  << "= ÏÎÈÑÊ ÑÀÌÎÃÎ ÄËÈÍÍÎÃÎ ÑËÎÂÀ =" << std::endl;
-        std::cout << "Ââåäèòå ñòğîêó (íå áîëåå 20 ñèìâîëîâ): " << std::endl;
+                  << "= ĞŸĞĞ˜Ğ¡Ğš Ğ¡ĞĞœĞĞ“Ğ Ğ”Ğ›Ğ˜ĞĞĞĞ“Ğ Ğ¡Ğ›ĞĞ’Ğ =" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑÑ‚Ñ€Ğ¾ĞºÑƒ (Ğ½Ğµ Ğ±Ğ¾Ğ»ĞµĞµ 20 ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²): " << std::endl;
         std::cin.getline(string, 20);
         if (std::cin.fail())
         {
@@ -888,16 +888,16 @@ void SearchLongestWord()
         }
         char result[21];
         LongestWord(string, result);
-        std::cout << "Ñàìîå äëèííîå ñëîâî â ñòğîêå \"" << string << "\":" << std::endl;
+        std::cout << "Ğ¡Ğ°Ğ¼Ğ¾Ğµ Ğ´Ğ»Ğ¸Ğ½Ğ½Ğ¾Ğµ ÑĞ»Ğ¾Ğ²Ğ¾ Ğ² ÑÑ‚Ñ€Ğ¾ĞºĞµ \"" << string << "\":" << std::endl;
         std::cout << result << std::endl;
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -908,22 +908,22 @@ void SearchLongestWord()
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
 }
 
-// Î÷èñòêà ñòğîêè îò íå-áóêâåííûõ ñèìâîëîâ
+// ĞÑ‡Ğ¸ÑÑ‚ĞºĞ° ÑÑ‚Ñ€Ğ¾ĞºĞ¸ Ğ¾Ñ‚ Ğ½Ğµ-Ğ±ÑƒĞºĞ²ĞµĞ½Ğ½Ñ‹Ñ… ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²
 void ClearNonAlphabeticCharacters(char *string, char *result)
 {
     int size = 0;
     for (char *current = string; current < string + std::strlen(string); ++current)
     {
         if ((*current >= 'A' && *current <= 'Z') ||
-            (*current >= 'À' && *current <= 'ß') ||
+            (*current >= 'Ğ' && *current <= 'Ğ¯') ||
             (*current >= 'a' && *current <= 'z') ||
-            (*current >= 'à' && *current <= 'ÿ'))
+            (*current >= 'Ğ°' && *current <= 'Ñ'))
         {
             *(result + size) = *current;
             ++size;
@@ -932,7 +932,7 @@ void ClearNonAlphabeticCharacters(char *string, char *result)
     *(result + size) = '\0';
 }
 
-// Îáğàáîòêà çàäà÷è äëÿ î÷èñòêè ñòğîêè îò íå-áóêâåííûõ ñèìâîëîâ
+// ĞĞ±Ñ€Ğ°Ğ±Ğ¾Ñ‚ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸ Ğ´Ğ»Ñ Ğ¾Ñ‡Ğ¸ÑÑ‚ĞºĞ¸ ÑÑ‚Ñ€Ğ¾ĞºĞ¸ Ğ¾Ñ‚ Ğ½Ğµ-Ğ±ÑƒĞºĞ²ĞµĞ½Ğ½Ñ‹Ñ… ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²
 void ClearingNonAlphabeticCharacters()
 {
     int issue_number;
@@ -940,8 +940,8 @@ void ClearingNonAlphabeticCharacters()
     {
         char string[21];
         std::cout << std::endl
-                  << "= Î×ÈÑÒÊÀ ÑÒĞÎÊÈ ÎÒ ÍÅ-ÁÓÊÂÅÍÍÛÕ ÑÈÌÂÎËÎÂ =" << std::endl;
-        std::cout << "Ââåäèòå ñòğîêó (íå áîëåå 20 ñèìâîëîâ): " << std::endl;
+                  << "= ĞĞ§Ğ˜Ğ¡Ğ¢ĞšĞ Ğ¡Ğ¢Ğ ĞĞšĞ˜ ĞĞ¢ ĞĞ•-Ğ‘Ğ£ĞšĞ’Ğ•ĞĞĞ«Ğ¥ Ğ¡Ğ˜ĞœĞ’ĞĞ›ĞĞ’ =" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑÑ‚Ñ€Ğ¾ĞºÑƒ (Ğ½Ğµ Ğ±Ğ¾Ğ»ĞµĞµ 20 ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²): " << std::endl;
         std::cin.getline(string, 20);
         if (std::cin.fail())
         {
@@ -950,16 +950,16 @@ void ClearingNonAlphabeticCharacters()
         }
         char result[21];
         ClearNonAlphabeticCharacters(string, result);
-        std::cout << "Ğåçóëüòàò äëÿ ñòğîêè \"" << string << "\":" << std::endl;
+        std::cout << "Ğ ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚ Ğ´Ğ»Ñ ÑÑ‚Ñ€Ğ¾ĞºĞ¸ \"" << string << "\":" << std::endl;
         std::cout << result << std::endl;
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -970,29 +970,29 @@ void ClearingNonAlphabeticCharacters()
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
 }
 
-// Èíòåğàêòèâíûé öèêë äëÿ äåòåêòîğà ïàëèíäğîìîâ è àíàãğàìì
+// Ğ˜Ğ½Ñ‚ĞµÑ€Ğ°ĞºÑ‚Ğ¸Ğ²Ğ½Ñ‹Ğ¹ Ñ†Ğ¸ĞºĞ» Ğ´Ğ»Ñ Ğ´ĞµÑ‚ĞµĞºÑ‚Ğ¾Ñ€Ğ° Ğ¿Ğ°Ğ»Ğ¸Ğ½Ğ´Ñ€Ğ¾Ğ¼Ğ¾Ğ² Ğ¸ Ğ°Ğ½Ğ°Ğ³Ñ€Ğ°Ğ¼Ğ¼
 void PalindromeAnagramDetector()
 {
     int issue_number;
     do
     {
         std::cout << std::endl
-                  << "== ÄÅÒÅÊÒÎĞ ÏÀËÈÍÄĞÎÌÎÂ È ÀÍÀÃĞÀÌÌ ==" << std::endl;
-        std::cout << "1. Ïğîâåğêà ñòğîêè íà ïàëèíäğîì" << std::endl;
-        std::cout << "2. Ïğîâåğêà äâóõ ñòğîê íà àíàãğàììû" << std::endl;
-        std::cout << "3. Ğåâåğñ ñòğîêè" << std::endl;
-        std::cout << "4. Ïîäñ÷åò êîëè÷åñòâà ñëîâ â ñòğîêå" << std::endl;
-        std::cout << "5. Ïîèñê ñàìîãî äëèííîãî ñëîâà" << std::endl;
-        std::cout << "6. Î÷èñòêà ñòğîêè îò íå-áóêâåííûõ ñèìâîëîâ" << std::endl;
-        std::cout << "0. Âûõîä" << std::endl
+                  << "== Ğ”Ğ•Ğ¢Ğ•ĞšĞ¢ĞĞ  ĞŸĞĞ›Ğ˜ĞĞ”Ğ ĞĞœĞĞ’ Ğ˜ ĞĞĞĞ“Ğ ĞĞœĞœ ==" << std::endl;
+        std::cout << "1. ĞŸÑ€Ğ¾Ğ²ĞµÑ€ĞºĞ° ÑÑ‚Ñ€Ğ¾ĞºĞ¸ Ğ½Ğ° Ğ¿Ğ°Ğ»Ğ¸Ğ½Ğ´Ñ€Ğ¾Ğ¼" << std::endl;
+        std::cout << "2. ĞŸÑ€Ğ¾Ğ²ĞµÑ€ĞºĞ° Ğ´Ğ²ÑƒÑ… ÑÑ‚Ñ€Ğ¾Ğº Ğ½Ğ° Ğ°Ğ½Ğ°Ğ³Ñ€Ğ°Ğ¼Ğ¼Ñ‹" << std::endl;
+        std::cout << "3. Ğ ĞµĞ²ĞµÑ€Ñ ÑÑ‚Ñ€Ğ¾ĞºĞ¸" << std::endl;
+        std::cout << "4. ĞŸĞ¾Ğ´ÑÑ‡ĞµÑ‚ ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ° ÑĞ»Ğ¾Ğ² Ğ² ÑÑ‚Ñ€Ğ¾ĞºĞµ" << std::endl;
+        std::cout << "5. ĞŸĞ¾Ğ¸ÑĞº ÑĞ°Ğ¼Ğ¾Ğ³Ğ¾ Ğ´Ğ»Ğ¸Ğ½Ğ½Ğ¾Ğ³Ğ¾ ÑĞ»Ğ¾Ğ²Ğ°" << std::endl;
+        std::cout << "6. ĞÑ‡Ğ¸ÑÑ‚ĞºĞ° ÑÑ‚Ñ€Ğ¾ĞºĞ¸ Ğ¾Ñ‚ Ğ½Ğµ-Ğ±ÑƒĞºĞ²ĞµĞ½Ğ½Ñ‹Ñ… ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²" << std::endl;
+        std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                   << std::endl;
-        std::cout << "Âûáåğèòå äåéñòâèå: " << std::endl;
+        std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ: " << std::endl;
         std::cin >> issue_number;
         std::cin.ignore(10000, '\n');
         if (std::cin.fail())
@@ -1007,7 +1007,7 @@ void PalindromeAnagramDetector()
         }
         else if (issue_number == 2)
         {
-            ÑheckingAnagrams();
+            Ğ¡heckingAnagrams();
         }
         else if (issue_number == 3)
         {
@@ -1027,14 +1027,14 @@ void PalindromeAnagramDetector()
         }
         else if (issue_number != 0)
         {
-            std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+            std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
         }
     } while (issue_number != 0);
 }
 
-// ÒĞÀÍÑÏÎÍÈĞÎÂÀÍÈÅ ÌÀÒĞÈÖÛ ÏĞÎÈÇÂÎËÜÍÎÃÎ ĞÀÇÌÅĞÀ
+// Ğ¢Ğ ĞĞĞ¡ĞŸĞĞĞ˜Ğ ĞĞ’ĞĞĞ˜Ğ• ĞœĞĞ¢Ğ Ğ˜Ğ¦Ğ« ĞŸĞ ĞĞ˜Ğ—Ğ’ĞĞ›Ğ¬ĞĞĞ“Ğ Ğ ĞĞ—ĞœĞ•Ğ Ğ
 
-// Çàïîëíåíèå ìàòğèöû ñëó÷àéíûìè ÷èñëàìè îò 1 äî 10
+// Ğ—Ğ°Ğ¿Ğ¾Ğ»Ğ½ĞµĞ½Ğ¸Ğµ Ğ¼Ğ°Ñ‚Ñ€Ğ¸Ñ†Ñ‹ ÑĞ»ÑƒÑ‡Ğ°Ğ¹Ğ½Ñ‹Ğ¼Ğ¸ Ñ‡Ğ¸ÑĞ»Ğ°Ğ¼Ğ¸ Ğ¾Ñ‚ 1 Ğ´Ğ¾ 10
 void FillingMatrix(int **matrix, int rows, int cols)
 {
     for (int **current_row = matrix; current_row < matrix + rows; ++current_row)
@@ -1046,7 +1046,7 @@ void FillingMatrix(int **matrix, int rows, int cols)
     }
 }
 
-// Òğàíñïîíèğîâàíèå ìàòğèöû
+// Ğ¢Ñ€Ğ°Ğ½ÑĞ¿Ğ¾Ğ½Ğ¸Ñ€Ğ¾Ğ²Ğ°Ğ½Ğ¸Ğµ Ğ¼Ğ°Ñ‚Ñ€Ğ¸Ñ†Ñ‹
 void MatrixTransposition(int **matrix, int **transposed_matrix, int rows, int cols)
 {
     for (int **current_row = transposed_matrix; current_row < transposed_matrix + cols; ++current_row)
@@ -1058,7 +1058,7 @@ void MatrixTransposition(int **matrix, int **transposed_matrix, int rows, int co
     }
 }
 
-// Ïîèñê ñóììû ıëåìåíòîâ â êàæäîì ñòîëáöå è ñòğîêå
+// ĞŸĞ¾Ğ¸ÑĞº ÑÑƒĞ¼Ğ¼Ñ‹ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¾Ğ² Ğ² ĞºĞ°Ğ¶Ğ´Ğ¾Ğ¼ ÑÑ‚Ğ¾Ğ»Ğ±Ñ†Ğµ Ğ¸ ÑÑ‚Ñ€Ğ¾ĞºĞµ
 void MatrixSum(int **matrix, int **sum_matrix, int rows, int cols)
 {
     for (int **current_row = sum_matrix; current_row < sum_matrix + rows; ++current_row)
@@ -1079,7 +1079,7 @@ void MatrixSum(int **matrix, int **sum_matrix, int rows, int cols)
     }
 }
 
-// Èíòåğàêòèâíûé öèêë äëÿ òğàíñïîíèğîâàíèÿ ìàòğèöû ïğîèçâîëüíîãî ğàçìåğà
+// Ğ˜Ğ½Ñ‚ĞµÑ€Ğ°ĞºÑ‚Ğ¸Ğ²Ğ½Ñ‹Ğ¹ Ñ†Ğ¸ĞºĞ» Ğ´Ğ»Ñ Ñ‚Ñ€Ğ°Ğ½ÑĞ¿Ğ¾Ğ½Ğ¸Ñ€Ğ¾Ğ²Ğ°Ğ½Ğ¸Ñ Ğ¼Ğ°Ñ‚Ñ€Ğ¸Ñ†Ñ‹ Ğ¿Ñ€Ğ¾Ğ¸Ğ·Ğ²Ğ¾Ğ»ÑŒĞ½Ğ¾Ğ³Ğ¾ Ñ€Ğ°Ğ·Ğ¼ĞµÑ€Ğ°
 void TransposingMatrixArbitrarySize()
 {
     int issue_number = 1;
@@ -1088,8 +1088,8 @@ void TransposingMatrixArbitrarySize()
         int rows;
         int cols;
         std::cout << std::endl
-                  << "== ÒĞÀÍÑÏÎÍÈĞÎÂÀÍÈÅ ÌÀÒĞÈÖÛ ÏĞÎÈÇÂÎËÜÍÎÃÎ ĞÀÇÌÅĞÀ ==" << std::endl;
-        std::cout << "Ââåäèòå êîëè÷åñòâî ñòğîê:" << std::endl;
+                  << "== Ğ¢Ğ ĞĞĞ¡ĞŸĞĞĞ˜Ğ ĞĞ’ĞĞĞ˜Ğ• ĞœĞĞ¢Ğ Ğ˜Ğ¦Ğ« ĞŸĞ ĞĞ˜Ğ—Ğ’ĞĞ›Ğ¬ĞĞĞ“Ğ Ğ ĞĞ—ĞœĞ•Ğ Ğ ==" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ ÑÑ‚Ñ€Ğ¾Ğº:" << std::endl;
         std::cin >> rows;
         std::cin.ignore(10000, '\n');
         if (std::cin.fail())
@@ -1100,10 +1100,10 @@ void TransposingMatrixArbitrarySize()
         }
         if (rows < 1)
         {
-            std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåêîğğåêòíîå ÷èñëî" << std::endl;
+            std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞºĞ¾Ñ€Ñ€ĞµĞºÑ‚Ğ½Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             continue;
         }
-        std::cout << "Ââåäèòå êîëè÷åñòâî ñòîëáöîâ:" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ ÑÑ‚Ğ¾Ğ»Ğ±Ñ†Ğ¾Ğ²:" << std::endl;
         std::cin >> cols;
         std::cin.ignore(10000, '\n');
         if (std::cin.fail())
@@ -1114,14 +1114,14 @@ void TransposingMatrixArbitrarySize()
         }
         if (cols < 1)
         {
-            std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåêîğğåêòíîå ÷èñëî" << std::endl;
+            std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞºĞ¾Ñ€Ñ€ĞµĞºÑ‚Ğ½Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             continue;
         }
         int **matrix = new int *[rows];
         for (int i = 0; i < rows; ++i)
             matrix[i] = new int[cols];
         FillingMatrix(matrix, rows, cols);
-        std::cout << "Èñõîäíàÿ ìàòğèöà:" << std::endl;
+        std::cout << "Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ğ°Ñ Ğ¼Ğ°Ñ‚Ñ€Ğ¸Ñ†Ğ°:" << std::endl;
         for (int i = 0; i < rows; ++i)
         {
             for (int j = 0; j < cols; ++j)
@@ -1134,7 +1134,7 @@ void TransposingMatrixArbitrarySize()
         for (int i = 0; i < cols; ++i)
             transposed_matrix[i] = new int[rows];
         MatrixTransposition(matrix, transposed_matrix, rows, cols);
-        std::cout << "Òğàíñïîíèğîâàííàÿ ìàòğèöà:" << std::endl;
+        std::cout << "Ğ¢Ñ€Ğ°Ğ½ÑĞ¿Ğ¾Ğ½Ğ¸Ñ€Ğ¾Ğ²Ğ°Ğ½Ğ½Ğ°Ñ Ğ¼Ğ°Ñ‚Ñ€Ğ¸Ñ†Ğ°:" << std::endl;
         for (int i = 0; i < cols; ++i)
         {
             for (int j = 0; j < rows; ++j)
@@ -1147,7 +1147,7 @@ void TransposingMatrixArbitrarySize()
         for (int i = 0; i < rows; ++i)
             sum_matrix[i] = new int[cols];
         MatrixSum(matrix, sum_matrix, rows, cols);
-        std::cout << "Ìàòğèöà ñ ñóììàìè ıëåìåíòîâ â êàæäîé ñòğîêå è ñòîáöå:" << std::endl;
+        std::cout << "ĞœĞ°Ñ‚Ñ€Ğ¸Ñ†Ğ° Ñ ÑÑƒĞ¼Ğ¼Ğ°Ğ¼Ğ¸ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¾Ğ² Ğ² ĞºĞ°Ğ¶Ğ´Ğ¾Ğ¹ ÑÑ‚Ñ€Ğ¾ĞºĞµ Ğ¸ ÑÑ‚Ğ¾Ğ±Ñ†Ğµ:" << std::endl;
         for (int i = 0; i < rows; ++i)
         {
             for (int j = 0; j < cols; ++j)
@@ -1168,11 +1168,11 @@ void TransposingMatrixArbitrarySize()
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -1183,15 +1183,15 @@ void TransposingMatrixArbitrarySize()
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåêîğğåêòíîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞºĞ¾Ñ€Ñ€ĞµĞºÑ‚Ğ½Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
 }
 
-// ÑÈÑÒÅÌÀ ÓÏĞÀÂËÅÍÈß ÁÈÁËÈÎÒÅÊÎÉ ÊÍÈÃ
+// Ğ¡Ğ˜Ğ¡Ğ¢Ğ•ĞœĞ Ğ£ĞŸĞ ĞĞ’Ğ›Ğ•ĞĞ˜Ğ¯ Ğ‘Ğ˜Ğ‘Ğ›Ğ˜ĞĞ¢Ğ•ĞšĞĞ™ ĞšĞĞ˜Ğ“
 
-// Ñòğóêòóğà äëÿ õğàíåíèÿ îäíîé êíèãè
+// Ğ¡Ñ‚Ñ€ÑƒĞºÑ‚ÑƒÑ€Ğ° Ğ´Ğ»Ñ Ñ…Ñ€Ğ°Ğ½ĞµĞ½Ğ¸Ñ Ğ¾Ğ´Ğ½Ğ¾Ğ¹ ĞºĞ½Ğ¸Ğ³Ğ¸
 struct Book
 {
     char title[21];
@@ -1199,7 +1199,7 @@ struct Book
     int year;
 };
 
-// Äîáàâëåíèå êíèãè â äèíàìè÷åñêèé ìàññèâ
+// Ğ”Ğ¾Ğ±Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ğµ ĞºĞ½Ğ¸Ğ³Ğ¸ Ğ² Ğ´Ğ¸Ğ½Ğ°Ğ¼Ğ¸Ñ‡ĞµÑĞºĞ¸Ğ¹ Ğ¼Ğ°ÑÑĞ¸Ğ²
 Book *Add(Book *books, int *size, char *title, char *author, int *year)
 {
     Book *temp_books = new Book[*size + 1];
@@ -1246,7 +1246,7 @@ Book *Add(Book *books, int *size, char *title, char *author, int *year)
     return temp_books;
 }
 
-// Îáğàáîòêà çàäà÷è äëÿ äîáàâëåíèÿ êíèãè
+// ĞĞ±Ñ€Ğ°Ğ±Ğ¾Ñ‚ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸ Ğ´Ğ»Ñ Ğ´Ğ¾Ğ±Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ñ ĞºĞ½Ğ¸Ğ³Ğ¸
 Book *AddBook(Book *books, int *size)
 {
     int issue_number = 1;
@@ -1256,22 +1256,22 @@ Book *AddBook(Book *books, int *size)
         char author[21];
         int year;
         std::cout << std::endl
-                  << "= ÄÎÁÀÂËÅÍÈÅ ÍÎÂÎÉ ÊÍÈÃÈ =" << std::endl;
-        std::cout << "Ââåäèòå íàçâàíèå êíèãè (íå áîëåå 20 ñèìâîëîâ): " << std::endl;
+                  << "= Ğ”ĞĞ‘ĞĞ’Ğ›Ğ•ĞĞ˜Ğ• ĞĞĞ’ĞĞ™ ĞšĞĞ˜Ğ“Ğ˜ =" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ°Ğ·Ğ²Ğ°Ğ½Ğ¸Ğµ ĞºĞ½Ğ¸Ğ³Ğ¸ (Ğ½Ğµ Ğ±Ğ¾Ğ»ĞµĞµ 20 ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²): " << std::endl;
         std::cin.getline(title, 20);
         if (std::cin.fail())
         {
             std::cin.clear();
             std::cin.ignore(10000, '\n');
         }
-        std::cout << "Ââåäèòå àâòîğà êíèãè (íå áîëåå 20 ñèìâîëîâ): " << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ°Ğ²Ñ‚Ğ¾Ñ€Ğ° ĞºĞ½Ğ¸Ğ³Ğ¸ (Ğ½Ğµ Ğ±Ğ¾Ğ»ĞµĞµ 20 ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²): " << std::endl;
         std::cin.getline(author, 20);
         if (std::cin.fail())
         {
             std::cin.clear();
             std::cin.ignore(10000, '\n');
         }
-        std::cout << "Ââåäèòå ãîä èçäàíèÿ: " << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ³Ğ¾Ğ´ Ğ¸Ğ·Ğ´Ğ°Ğ½Ğ¸Ñ: " << std::endl;
         std::cin >> year;
         std::cin.ignore(10000, '\n');
         if (std::cin.fail())
@@ -1282,18 +1282,18 @@ Book *AddBook(Book *books, int *size)
         }
         if (year <= 0)
         {
-            std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåêîğğåêòíîå ÷èñëî" << std::endl;
+            std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞºĞ¾Ñ€Ñ€ĞµĞºÑ‚Ğ½Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             continue;
         }
         books = Add(books, size, title, author, &year);
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -1304,14 +1304,14 @@ Book *AddBook(Book *books, int *size)
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
     return books;
 }
 
-// Ïîèñê êíèã ïî íàçâàíèş
+// ĞŸĞ¾Ğ¸ÑĞº ĞºĞ½Ğ¸Ğ³ Ğ¿Ğ¾ Ğ½Ğ°Ğ·Ğ²Ğ°Ğ½Ğ¸Ñ
 void FindBook(Book *books, int *size, char *title)
 {
     bool find = false;
@@ -1322,18 +1322,18 @@ void FindBook(Book *books, int *size, char *title)
             if (!find)
             {
                 find = true;
-                std::cout << "Íàéäåííûå êíèãè:" << std::endl;
+                std::cout << "ĞĞ°Ğ¹Ğ´ĞµĞ½Ğ½Ñ‹Ğµ ĞºĞ½Ğ¸Ğ³Ğ¸:" << std::endl;
             }
             std::cout << book->author << " \"" << book->title << "\" " << book->year << std::endl;
         }
     }
     if (!find)
     {
-        std::cout << "Êíèãè íå íàéäåíû" << std::endl;
+        std::cout << "ĞšĞ½Ğ¸Ğ³Ğ¸ Ğ½Ğµ Ğ½Ğ°Ğ¹Ğ´ĞµĞ½Ñ‹" << std::endl;
     }
 }
 
-// Îáğàáîòêà çàäà÷è äëÿ ïîèñêà êíèãè ïî íàçâàíèş
+// ĞĞ±Ñ€Ğ°Ğ±Ğ¾Ñ‚ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸ Ğ´Ğ»Ñ Ğ¿Ğ¾Ğ¸ÑĞºĞ° ĞºĞ½Ğ¸Ğ³Ğ¸ Ğ¿Ğ¾ Ğ½Ğ°Ğ·Ğ²Ğ°Ğ½Ğ¸Ñ
 void SearchBookByName(Book *books, int *size)
 {
     int issue_number = 1;
@@ -1341,8 +1341,8 @@ void SearchBookByName(Book *books, int *size)
     {
         char title[21];
         std::cout << std::endl
-                  << "= ÏÎÈÑÊ ÊÍÈÃÈ ÏÎ ÍÀÇÂÀÍÈÈŞ =" << std::endl;
-        std::cout << "Ââåäèòå íàçâàíèå êíèãè (íå áîëåå 20 ñèìâîëîâ): " << std::endl;
+                  << "= ĞŸĞĞ˜Ğ¡Ğš ĞšĞĞ˜Ğ“Ğ˜ ĞŸĞ ĞĞĞ—Ğ’ĞĞĞ˜Ğ˜Ğ® =" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ°Ğ·Ğ²Ğ°Ğ½Ğ¸Ğµ ĞºĞ½Ğ¸Ğ³Ğ¸ (Ğ½Ğµ Ğ±Ğ¾Ğ»ĞµĞµ 20 ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²): " << std::endl;
         std::cin.getline(title, 20);
         if (std::cin.fail())
         {
@@ -1353,11 +1353,11 @@ void SearchBookByName(Book *books, int *size)
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -1368,13 +1368,13 @@ void SearchBookByName(Book *books, int *size)
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
 }
 
-// Âûâîä êíèã îïğåäåëåííîãî àâòîğà
+// Ğ’Ñ‹Ğ²Ğ¾Ğ´ ĞºĞ½Ğ¸Ğ³ Ğ¾Ğ¿Ñ€ĞµĞ´ĞµĞ»ĞµĞ½Ğ½Ğ¾Ğ³Ğ¾ Ğ°Ğ²Ñ‚Ğ¾Ñ€Ğ°
 void OutputBooks(Book *books, int *size, char *author)
 {
     bool find = false;
@@ -1385,18 +1385,18 @@ void OutputBooks(Book *books, int *size, char *author)
             if (!find)
             {
                 find = true;
-                std::cout << "Íàéäåííûå êíèãè:" << std::endl;
+                std::cout << "ĞĞ°Ğ¹Ğ´ĞµĞ½Ğ½Ñ‹Ğµ ĞºĞ½Ğ¸Ğ³Ğ¸:" << std::endl;
             }
             std::cout << book->author << " \"" << book->title << "\" " << book->year << std::endl;
         }
     }
     if (!find)
     {
-        std::cout << "Êíèãè íå íàéäåíû" << std::endl;
+        std::cout << "ĞšĞ½Ğ¸Ğ³Ğ¸ Ğ½Ğµ Ğ½Ğ°Ğ¹Ğ´ĞµĞ½Ñ‹" << std::endl;
     }
 }
 
-// Îáğàáîòêà çàäà÷è äëÿ âûâîäà âñåõ êíèã îïğåäåëåííîãî àâòîğà
+// ĞĞ±Ñ€Ğ°Ğ±Ğ¾Ñ‚ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸ Ğ´Ğ»Ñ Ğ²Ñ‹Ğ²Ğ¾Ğ´Ğ° Ğ²ÑĞµÑ… ĞºĞ½Ğ¸Ğ³ Ğ¾Ğ¿Ñ€ĞµĞ´ĞµĞ»ĞµĞ½Ğ½Ğ¾Ğ³Ğ¾ Ğ°Ğ²Ñ‚Ğ¾Ñ€Ğ°
 void OutputAllBooksCertainAuthor(Book *books, int *size)
 {
     int issue_number = 1;
@@ -1404,8 +1404,8 @@ void OutputAllBooksCertainAuthor(Book *books, int *size)
     {
         char author[21];
         std::cout << std::endl
-                  << "= ÂÛÂÎÄ ÂÑÅÕ ÊÍÈÃ ÎÏĞÅÄÅËÅÍÍÎÃÎ ÀÂÒÎĞÀ =" << std::endl;
-        std::cout << "Ââåäèòå àâòîğà êíèã (íå áîëåå 20 ñèìâîëîâ): " << std::endl;
+                  << "= Ğ’Ğ«Ğ’ĞĞ” Ğ’Ğ¡Ğ•Ğ¥ ĞšĞĞ˜Ğ“ ĞĞŸĞ Ğ•Ğ”Ğ•Ğ›Ğ•ĞĞĞĞ“Ğ ĞĞ’Ğ¢ĞĞ Ğ =" << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ°Ğ²Ñ‚Ğ¾Ñ€Ğ° ĞºĞ½Ğ¸Ğ³ (Ğ½Ğµ Ğ±Ğ¾Ğ»ĞµĞµ 20 ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²): " << std::endl;
         std::cin.getline(author, 20);
         if (std::cin.fail())
         {
@@ -1416,11 +1416,11 @@ void OutputAllBooksCertainAuthor(Book *books, int *size)
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -1431,13 +1431,13 @@ void OutputAllBooksCertainAuthor(Book *books, int *size)
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
 }
 
-// Óäàëåíèå êíèãè èç ñèñòåìû
+// Ğ£Ğ´Ğ°Ğ»ĞµĞ½Ğ¸Ğµ ĞºĞ½Ğ¸Ğ³Ğ¸ Ğ¸Ğ· ÑĞ¸ÑÑ‚ĞµĞ¼Ñ‹
 Book *DeleteBook(Book *books, int *size, int *index_book)
 {
     Book *temp_books = new Book[*size - 1];
@@ -1465,7 +1465,7 @@ Book *DeleteBook(Book *books, int *size, int *index_book)
     return temp_books;
 }
 
-// Îáğàáîòêà çàäà÷è äëÿ óäàëåíèÿ êíèãè èç ñèñòåìû
+// ĞĞ±Ñ€Ğ°Ğ±Ğ¾Ñ‚ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸ Ğ´Ğ»Ñ ÑƒĞ´Ğ°Ğ»ĞµĞ½Ğ¸Ñ ĞºĞ½Ğ¸Ğ³Ğ¸ Ğ¸Ğ· ÑĞ¸ÑÑ‚ĞµĞ¼Ñ‹
 Book *DeleteBookFromSystem(Book *books, int *size)
 {
     int issue_number = 1;
@@ -1473,12 +1473,12 @@ Book *DeleteBookFromSystem(Book *books, int *size)
     {
         int index_book;
         std::cout << std::endl
-                  << "= ÓÄÀËÅÍÈÅ ÊÍÈÃÈ ÈÇ ÑÈÑÒÅÌÛ =" << std::endl;
+                  << "= Ğ£Ğ”ĞĞ›Ğ•ĞĞ˜Ğ• ĞšĞĞ˜Ğ“Ğ˜ Ğ˜Ğ— Ğ¡Ğ˜Ğ¡Ğ¢Ğ•ĞœĞ« =" << std::endl;
         for (Book *book = books; book < (books + *size); ++book)
         {
             std::cout << book - books + 1 << ". " << book->author << " \"" << book->title << "\" " << book->year << std::endl;
         }
-        std::cout << "Ââåäèòå íîìåğ êíèãè: " << std::endl;
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ¾Ğ¼ĞµÑ€ ĞºĞ½Ğ¸Ğ³Ğ¸: " << std::endl;
         std::cin >> index_book;
         std::cin.ignore(10000, '\n');
         if (std::cin.fail())
@@ -1488,18 +1488,18 @@ Book *DeleteBookFromSystem(Book *books, int *size)
         }
         if (index_book < 1 || index_book > *size)
         {
-            std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+            std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             continue;
         }
         books = DeleteBook(books, size, &index_book);
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -1510,14 +1510,14 @@ Book *DeleteBookFromSystem(Book *books, int *size)
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
     return books;
 }
 
-// Îáğàáîòêà çàäà÷è äëÿ âûâîäà âñåõ êíèã
+// ĞĞ±Ñ€Ğ°Ğ±Ğ¾Ñ‚ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸ Ğ´Ğ»Ñ Ğ²Ñ‹Ğ²Ğ¾Ğ´Ğ° Ğ²ÑĞµÑ… ĞºĞ½Ğ¸Ğ³
 void OutputAllBooks(Book *books, int *size)
 {
     int issue_number = 1;
@@ -1525,7 +1525,7 @@ void OutputAllBooks(Book *books, int *size)
     {
         int index_book;
         std::cout << std::endl
-                  << "= ÂÛÂÎÄ ÊÍÈÃ, ÎÒÑÎĞÒÈĞÎÂÀÍÍÛÕ ÏÎ ÃÎÄÓ ÈÇÄÀÍÈß =" << std::endl;
+                  << "= Ğ’Ğ«Ğ’ĞĞ” ĞšĞĞ˜Ğ“, ĞĞ¢Ğ¡ĞĞ Ğ¢Ğ˜Ğ ĞĞ’ĞĞĞĞ«Ğ¥ ĞŸĞ Ğ“ĞĞ”Ğ£ Ğ˜Ğ—Ğ”ĞĞĞ˜Ğ¯ =" << std::endl;
         for (Book *book = books; book < (books + *size); ++book)
         {
             std::cout << book - books + 1 << ". " << book->author << " \"" << book->title << "\" " << book->year << std::endl;
@@ -1533,11 +1533,11 @@ void OutputAllBooks(Book *books, int *size)
         do
         {
             std::cout << std::endl
-                      << "Çàäà÷à çàâåğøåíà" << std::endl;
-            std::cout << "1. Âûïîëíèòü çàäà÷ó åùå ğàç" << std::endl;
-            std::cout << "0. Âûõîä" << std::endl
+                      << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ°" << std::endl;
+            std::cout << "1. Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·" << std::endl;
+            std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                       << std::endl;
-            std::cout << "Âûáåğèòå äåéñòâèå:" << std::endl;
+            std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ:" << std::endl;
             std::cin >> issue_number;
             std::cin.ignore(10000, '\n');
             if (std::cin.fail())
@@ -1548,13 +1548,13 @@ void OutputAllBooks(Book *books, int *size)
             }
             if (issue_number != 1 && issue_number != 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
             }
         } while (issue_number != 1 && issue_number != 0);
     } while (issue_number != 0);
 }
 
-// Èíòåğàêòèâíûé öèêë äëÿ ñèñòåìû óïğàâëåíèÿ áèáëèîòåêîé êíèã
+// Ğ˜Ğ½Ñ‚ĞµÑ€Ğ°ĞºÑ‚Ğ¸Ğ²Ğ½Ñ‹Ğ¹ Ñ†Ğ¸ĞºĞ» Ğ´Ğ»Ñ ÑĞ¸ÑÑ‚ĞµĞ¼Ñ‹ ÑƒĞ¿Ñ€Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ñ Ğ±Ğ¸Ğ±Ğ»Ğ¸Ğ¾Ñ‚ĞµĞºĞ¾Ğ¹ ĞºĞ½Ğ¸Ğ³
 void BookLibraryManagementSystem()
 {
     int issue_number;
@@ -1563,15 +1563,15 @@ void BookLibraryManagementSystem()
     do
     {
         std::cout << std::endl
-                  << "== ÑÈÑÒÅÌÀ ÓÏĞÀÂËÅÍÈß ÁÈÁËÈÎÒÅÊÎÉ ÊÍÈÃ ==" << std::endl;
-        std::cout << "1. Äîáàâëåíèå íîâîé êíèãè" << std::endl;
-        std::cout << "2. Ïîèñê êíèãè ïî íàçâàíèş" << std::endl;
-        std::cout << "3. Âûâîä âñåõ êíèã îïğåäåëåííîãî àâòîğà" << std::endl;
-        std::cout << "4. Óäàëåíèå êíèãè èç ñèñòåìû" << std::endl;
-        std::cout << "5. Âûâåñòè âñå êíèãè, îòñîğòèğîâàííûå ïî ãîäó èçäàíèÿ" << std::endl;
-        std::cout << "0. Âûõîä" << std::endl
+                  << "== Ğ¡Ğ˜Ğ¡Ğ¢Ğ•ĞœĞ Ğ£ĞŸĞ ĞĞ’Ğ›Ğ•ĞĞ˜Ğ¯ Ğ‘Ğ˜Ğ‘Ğ›Ğ˜ĞĞ¢Ğ•ĞšĞĞ™ ĞšĞĞ˜Ğ“ ==" << std::endl;
+        std::cout << "1. Ğ”Ğ¾Ğ±Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ğµ Ğ½Ğ¾Ğ²Ğ¾Ğ¹ ĞºĞ½Ğ¸Ğ³Ğ¸" << std::endl;
+        std::cout << "2. ĞŸĞ¾Ğ¸ÑĞº ĞºĞ½Ğ¸Ğ³Ğ¸ Ğ¿Ğ¾ Ğ½Ğ°Ğ·Ğ²Ğ°Ğ½Ğ¸Ñ" << std::endl;
+        std::cout << "3. Ğ’Ñ‹Ğ²Ğ¾Ğ´ Ğ²ÑĞµÑ… ĞºĞ½Ğ¸Ğ³ Ğ¾Ğ¿Ñ€ĞµĞ´ĞµĞ»ĞµĞ½Ğ½Ğ¾Ğ³Ğ¾ Ğ°Ğ²Ñ‚Ğ¾Ñ€Ğ°" << std::endl;
+        std::cout << "4. Ğ£Ğ´Ğ°Ğ»ĞµĞ½Ğ¸Ğµ ĞºĞ½Ğ¸Ğ³Ğ¸ Ğ¸Ğ· ÑĞ¸ÑÑ‚ĞµĞ¼Ñ‹" << std::endl;
+        std::cout << "5. Ğ’Ñ‹Ğ²ĞµÑÑ‚Ğ¸ Ğ²ÑĞµ ĞºĞ½Ğ¸Ğ³Ğ¸, Ğ¾Ñ‚ÑĞ¾Ñ€Ñ‚Ğ¸Ñ€Ğ¾Ğ²Ğ°Ğ½Ğ½Ñ‹Ğµ Ğ¿Ğ¾ Ğ³Ğ¾Ğ´Ñƒ Ğ¸Ğ·Ğ´Ğ°Ğ½Ğ¸Ñ" << std::endl;
+        std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                   << std::endl;
-        std::cout << "Âûáåğèòå äåéñòâèå: " << std::endl;
+        std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ: " << std::endl;
         std::cin >> issue_number;
         std::cin.ignore(10000, '\n');
         if (std::cin.fail())
@@ -1588,7 +1588,7 @@ void BookLibraryManagementSystem()
         {
             if (size == 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Íåò êíèã â ñèñòåìå" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: ĞĞµÑ‚ ĞºĞ½Ğ¸Ğ³ Ğ² ÑĞ¸ÑÑ‚ĞµĞ¼Ğµ" << std::endl;
             }
             else
             {
@@ -1599,7 +1599,7 @@ void BookLibraryManagementSystem()
         {
             if (size == 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Íåò êíèã â ñèñòåìå" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: ĞĞµÑ‚ ĞºĞ½Ğ¸Ğ³ Ğ² ÑĞ¸ÑÑ‚ĞµĞ¼Ğµ" << std::endl;
             }
             else
             {
@@ -1610,7 +1610,7 @@ void BookLibraryManagementSystem()
         {
             if (size == 0)
             {
-                std::cout << "ÎØÈÁÊÀ: Íåò êíèã â ñèñòåìå" << std::endl;
+                std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: ĞĞµÑ‚ ĞºĞ½Ğ¸Ğ³ Ğ² ÑĞ¸ÑÑ‚ĞµĞ¼Ğµ" << std::endl;
             }
             else
             {
@@ -1623,7 +1623,7 @@ void BookLibraryManagementSystem()
         }
         else if (issue_number != 0)
         {
-            std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+            std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
         }
     } while (issue_number != 0);
     delete[] books;
@@ -1637,15 +1637,15 @@ int main()
     do
     {
         std::cout << std::endl
-                  << "=== ËÀÁÎĞÀÒÎĞÍÀß ĞÀÁÎÒÀ 3 ===" << std::endl;
-        std::cout << "1. Àíàëèçàòîğ óñïåâàåìîñòè ãğóïïû" << std::endl;
-        std::cout << "2. Óìíûé êàëüêóëÿòîğ ñ èñòîğèåé îïåğàöèé" << std::endl;
-        std::cout << "3. Äåòåêòîğ ïàëèíäğîìîâ è àíàãğàìì" << std::endl;
-        std::cout << "4. Òğàíñïîíèğîâàíèå ìàòğèöû ïğîèçâîëüíîãî ğàçìåğà" << std::endl;
-        std::cout << "5. Ñèñòåìà óïğàâëåíèÿ áèáëèîòåêîé êíèã" << std::endl;
-        std::cout << "0. Âûõîä" << std::endl
+                  << "=== Ğ›ĞĞ‘ĞĞ ĞĞ¢ĞĞ ĞĞĞ¯ Ğ ĞĞ‘ĞĞ¢Ğ 3 ===" << std::endl;
+        std::cout << "1. ĞĞ½Ğ°Ğ»Ğ¸Ğ·Ğ°Ñ‚Ğ¾Ñ€ ÑƒÑĞ¿ĞµĞ²Ğ°ĞµĞ¼Ğ¾ÑÑ‚Ğ¸ Ğ³Ñ€ÑƒĞ¿Ğ¿Ñ‹" << std::endl;
+        std::cout << "2. Ğ£Ğ¼Ğ½Ñ‹Ğ¹ ĞºĞ°Ğ»ÑŒĞºÑƒĞ»ÑÑ‚Ğ¾Ñ€ Ñ Ğ¸ÑÑ‚Ğ¾Ñ€Ğ¸ĞµĞ¹ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ğ¹" << std::endl;
+        std::cout << "3. Ğ”ĞµÑ‚ĞµĞºÑ‚Ğ¾Ñ€ Ğ¿Ğ°Ğ»Ğ¸Ğ½Ğ´Ñ€Ğ¾Ğ¼Ğ¾Ğ² Ğ¸ Ğ°Ğ½Ğ°Ğ³Ñ€Ğ°Ğ¼Ğ¼" << std::endl;
+        std::cout << "4. Ğ¢Ñ€Ğ°Ğ½ÑĞ¿Ğ¾Ğ½Ğ¸Ñ€Ğ¾Ğ²Ğ°Ğ½Ğ¸Ğµ Ğ¼Ğ°Ñ‚Ñ€Ğ¸Ñ†Ñ‹ Ğ¿Ñ€Ğ¾Ğ¸Ğ·Ğ²Ğ¾Ğ»ÑŒĞ½Ğ¾Ğ³Ğ¾ Ñ€Ğ°Ğ·Ğ¼ĞµÑ€Ğ°" << std::endl;
+        std::cout << "5. Ğ¡Ğ¸ÑÑ‚ĞµĞ¼Ğ° ÑƒĞ¿Ñ€Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ñ Ğ±Ğ¸Ğ±Ğ»Ğ¸Ğ¾Ñ‚ĞµĞºĞ¾Ğ¹ ĞºĞ½Ğ¸Ğ³" << std::endl;
+        std::cout << "0. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << std::endl
                   << std::endl;
-        std::cout << "Âûáåğèòå äåéñòâèå: " << std::endl;
+        std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ: " << std::endl;
         std::cin >> issue_number;
         std::cin.ignore(10000, '\n');
         if (std::cin.fail())
@@ -1676,7 +1676,7 @@ int main()
         }
         else if (issue_number != 0)
         {
-            std::cout << "ÎØÈÁÊÀ: Ââåäåíî íåäîïóñòèìîå ÷èñëî" << std::endl;
+            std::cout << "ĞĞ¨Ğ˜Ğ‘ĞšĞ: Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ¾ Ğ½ĞµĞ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << std::endl;
         }
     } while (issue_number != 0);
     return 0;
