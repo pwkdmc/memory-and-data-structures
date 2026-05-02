@@ -1631,7 +1631,6 @@ void BookLibraryManagementSystem()
 
 int main()
 {
-    setlocale(LC_ALL, "rus");
     srand(time(0));
     int issue_number;
     do
